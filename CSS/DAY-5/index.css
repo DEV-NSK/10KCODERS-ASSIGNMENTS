@@ -1,0 +1,396 @@
+body {
+    height: 100vh;
+    margin: 0px;
+}
+
+#home-page {
+    background-color: rgba(135, 207, 235, 0.499);
+}
+
+#nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav > h1 {
+    font-size: 2.5rem;
+}
+
+#nav > h1 > span {
+    color: rgb(255, 111, 0);
+}
+
+#nav-links {
+    display: flex;
+    column-gap: 50px;
+}
+
+#nav-links > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+#nav-links > a:hover {
+    color: red;
+}
+
+#nav-links > a > span {
+    color: red;
+}
+
+#nav-btn {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: rgb(255, 94, 0);
+    border-radius: 30px;
+}
+
+#nav-btn > img {
+    width: 30px;
+    height: 30px;
+}
+
+#nav-btn > p {
+    font-weight: 600;
+}
+
+#nav-btn > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+#home {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#home-content {
+    width: 40%;
+    margin: auto;
+}
+
+#home-content > p {
+    font-size: 20px;
+}
+
+#home-content > h1 {
+    font-size: 2.5rem;
+}
+
+#home-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(79, 149, 170, 0.433);
+}
+
+#home-form > input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 20px 40% 20px 20px;
+}
+
+#home-form > a {
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+#home-content > #home-p2 {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#read-btn {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgb(255, 94, 0);
+    border-radius: 5px;
+    width: 7rem;
+}
+
+#read-btn > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+#home-img {
+    width: 50%;
+}
+
+#home-img > img {
+    width: 80%;
+}
+
+/* About Page */
+
+#about {
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    column-gap: 40px;
+}
+
+#about > img {
+    width: 40%;
+    border-radius: 3%;
+}
+
+#about-content {
+    width: 40%;
+}
+
+#about-content > span {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.282);
+    font-size: 12px;
+    border: 1px solid red;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+#about-content > h1 {
+    font-size: 2.5rem;
+}
+
+#about-content > p {
+    font-weight: 500;
+}
+
+ul {
+    font-size: 1.4rem;
+}
+
+li::marker {
+    color: rgb(241, 163, 18);
+}
+
+#about-btn {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    padding: 0px 20px;
+    background-color: rgb(255, 94, 0);
+    border-radius: 5px;
+    width: 7rem;
+}
+
+#about-btn > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Services-Page */
+
+#services {
+    margin-top: 10rem;
+}
+
+#services-content {
+    text-align: center;
+    line-height: 1rem;
+}
+
+#services-content > span {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.282);
+    font-size: 12px;
+    border: 1px solid red;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+#services-content > h1 {
+    font-size: 2.5rem;
+}
+
+#services-content > p {
+    font-size: 1.2rem;
+}
+
+#cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: 3rem;
+}
+
+.card {
+    display: flex;
+    width: 25%;
+    border: 1px solid rgba(0, 0, 0, 0.39);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.444);
+    column-gap: 20px;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.num {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    height: 20px;
+    margin-top: 1.5rem;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.444);
+}
+
+.card-content > span:hover {
+    box-shadow: 2px 2px 4px rgb(206, 77, 77);
+    padding: 5px 5px;
+    border-radius: 3px;
+    background-color: red;
+}
+
+.card-content > span > a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* WORKS-Nav */
+
+#works-nav {
+    margin-top: 12rem;
+    display: flex;
+    width: 100%;
+}
+
+#works-nav > h1 {
+    width: 40%;
+    padding: 0px 0px 0px 10%;
+    font-size: 3rem;
+}
+
+#worksnav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+#worksnav-links > p > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 5px 15px 5px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.407);
+    border-radius: 3px;
+}
+
+#worksnav-links > p > a:hover {
+    background-color: rgb(231, 116, 0);
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.444);
+}
+
+/* works-images */
+
+#works-img {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.img {
+    width: 45%;
+    padding: 20% 5px 5px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-image: url(lotus.jpg);
+    background-size: cover;
+    color: white;
+    box-shadow: 2px 2px 20px grey;
+}
+
+.img > span > a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    padding: 4px 10px;
+}
+
+.img > span > a:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px grey;
+    background-color: red;
+    border-radius: 4px;
+}
+
+
+/* Contact-Page */
+
+#contact-page {
+    margin-top: 10rem;
+    text-align: center;
+    line-height: 1rem;
+}
+
+#contact-page > span {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.282);
+    font-size: 12px;
+    border: 1px solid red;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+#contact-page > h1 {
+    font-size: 2.3rem;
+}
+
+#contact-page > p {
+    font-size: 1.2rem;
+    padding: 0px 20%;
+    line-height: 20px;
+}
+
+/* contact-form */
+#contact-form {
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    padding: 0px 10px 5px 10px;
+    width: 40%;
+    margin: auto;
+    box-shadow: 2px 2px 10px grey;
+}
+
+#contact-form > input {
+    width: 90%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.152);
+}
+
+#form-send {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px 0px 20px;
+}
+
+#form-send > a {
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#form-send > img {
+    width: 20px;
+}

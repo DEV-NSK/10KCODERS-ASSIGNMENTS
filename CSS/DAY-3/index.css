@@ -1,0 +1,59 @@
+#heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading > h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(206, 176, 9);
+}
+
+.course {
+    display: flex;
+    justify-content: center;
+}
+
+.Biryanis {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 3px 1px 10px 1px;
+    width: 20%;
+    background-color: rgba(135, 207, 235, 0.356);
+    flex-wrap: wrap;
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card > h1 , h3 {
+    text-align: center;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+}
+
+.cart > button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+ .cart > button > a  {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+ }

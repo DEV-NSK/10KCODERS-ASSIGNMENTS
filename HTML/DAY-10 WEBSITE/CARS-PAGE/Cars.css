@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.nav-logo {
+    width: 50px;
+    margin: 30px;
+}
+
+.heading h1{
+    color: gold;
+    text-align: center;
+    font-size: 40px;
+}
+
+.carhe:hover{
+    color: red;
+}
+
+.img1 {
+    width: 1000px;
+    transform: scaleX(-1);
+}
+
+.list1 {
+    color: white;
+    font-size: 20px;
+    padding-left: 60px;
+}
+
+.listh {
+    color: rgb(255, 128, 0);
+    font-size: 25px;
+}
+
+.name1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+}
+
+.name1:hover {
+    color: rgb(255, 0, 0);
+}
+
+.img2 {
+    width: 800px;
+    padding-left: 50px;
+}
+
+.list2 {
+    color: white;
+    font-size: 20px;
+    padding-left: 140px;
+}
+
+.name2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+}
+
+.name2:hover {
+    color: rgb(255, 0, 0);
+}
+
+.carsz {
+    padding: 60px;
+}

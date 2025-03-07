@@ -1,0 +1,1158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0 1rem 0;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 0 0 10px 10px;
+    position: fixed;
+}
+#navbar > span {
+    font-size: 1.5rem;
+}
+#navbar > span:hover {
+    color: rgb(2, 162, 125);
+}
+#nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#nav-links > a {
+    text-decoration: none;
+    color: rgb(109, 106, 106);
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+#nav-links > a:hover {
+    color: grey;
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0.082);
+} 
+
+/* HOME-PAGE */
+#home-page {
+    width: 100%;
+    height: 100vh;
+}
+#home-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+}
+#home-img > img {
+    width: 20%;
+    background-color: rgba(255, 60, 0, 0.904);
+    border-radius: 50%;
+}
+#home-content {
+    width: 100%;
+    margin: auto;
+    line-height: 2rem;
+}
+#home-content > p {
+    text-align: center;
+    padding-left: 12%;
+    color: rgb(93, 92, 92);
+}
+#home-content > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+#home-content > h5 {
+    text-align: end;
+    padding-right: 10%;
+    line-height: 3rem;
+    color: rgb(45, 44, 44);
+}
+
+/* ABOUT-PAGE */
+#about-page {
+    width: 100%;
+    height: 100vh;
+}
+#location {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding-left: 2rem;
+}
+#location > img {
+    width: 2%;
+}
+#location > span {
+    font-size: 1.5rem;
+    color: rgb(5, 166, 129);
+}
+#heading {
+    width: 100%;
+    text-align: center;
+}
+#heading > p {
+    font-size: 1.5rem;
+}
+#heading > p > span {
+    color: rgb(0, 89, 255);
+}
+#aboutme {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: 1.5rem;
+    padding: 0 10%;
+}
+#aboutme > p {
+    width: 100%;
+    color: rgb(114, 113, 113);
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+#cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10%;
+    margin-top: 2rem;
+    padding: 0 10%;
+}
+.card {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.767);
+    border-radius: 10px;
+    transition: 0.5s linear 0.1s;
+}
+.card:hover {
+    background-color: rgba(151, 151, 151, 0.088);
+    box-shadow: 0px 0px 5px rgba(252, 21, 4, 0.992);
+}
+.card > h1 {
+    font-weight: normal;
+    color: rgb(14, 14, 79);
+    line-height: 5rem;
+}
+.card1 > h3 {
+    font-weight: lighter;
+    line-height: 2rem;
+}
+.card1 > span  {
+    line-height: 3rem;
+}
+.card1 > h5 {
+    font-weight: bolder;
+    color: rgb(72, 71, 71);
+}
+.card > p {
+    line-height: 2rem;
+    color: rgb(64, 60, 60);
+}
+#promoting {
+    width: 100%;
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+#promoting > span {
+    width: 100%;
+    padding-left: 10%;
+}
+#promoting > p {
+    width: 100%;
+    padding-left: 15%;
+    color: rgb(61, 60, 60);
+}
+#promoting > p > a {
+    text-decoration: none;
+    color: rgb(13, 0, 255);
+    padding-left: 5%;
+}
+#promoting > p > a:hover {
+    color: red;
+}
+
+/* SKILLS */
+#skills-page {
+    width: 100%;
+    height: 80vh;
+    margin-top: 5rem;
+}
+#skills-page > h1 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+#skill-images {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    row-gap: 2rem;
+    padding: 0 20%;
+}
+#skill-images > a > img {
+    background-color: rgba(255, 255, 255, 0.953);
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(42, 42, 42);
+    transition: 0.5s linear 0.1s;
+}
+#skill-images > a > img:hover {
+    box-shadow: 0px 0px 10px rgb(241, 22, 7);
+}
+
+/* PROJECTS-PAGE */
+#projects-page {
+    width: 100%;
+    height: 150vh;
+    padding: 0 5%;
+}
+#projects-page > h1 {
+    font-weight: normal;
+    padding: 1rem 0;
+    line-height: 3rem;
+}
+#project-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+
+}
+.project {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.project > a > img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(189, 60, 60);
+}
+.project-content {
+    width: 100%;
+}
+.project-content > h2 {
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+}
+.project-content > p {
+    width: 100%;
+    text-align: center;
+    color: rgb(72, 71, 71);
+    line-height: 1.3rem;
+}
+.tech-stack {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5px;
+    line-height: 3rem;
+}
+.tech-stack > h3 {
+    color: rgb(60, 58, 58);
+}
+.tech-stack > h4 {
+    color: rgb(27, 25, 25);
+    font-weight: lighter;
+}
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.links > a {
+    text-decoration: none;
+    color: rgb(13, 0, 255);
+    padding: 3px 10px;
+    transition: 0.3s linear 0.1s;
+}
+.links > a:hover {
+    color: rgb(255, 0, 0);
+    background-color: rgba(166, 165, 165, 0.564);
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.note {
+    width: 100%;
+    color: grey;
+}
+.note > p > span {
+    color: black;
+    font-weight: bold;
+}
+
+/* CONTACT-PAGE */
+#contact-page {
+    width: 100%;
+    height: 40vh;
+    margin-top: 10rem;
+    text-align: center;
+    line-height: 2rem;
+}
+#contact-page > h1 {
+    width: 100%;
+    font-weight: lighter;
+}
+#contact-page > p {
+    width: 100%;
+    color: rgb(62, 62, 62);
+}
+#contact-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+/* mobile-SCREEN */
+@media (max-width:481px) {
+    /* NAVBAR */
+    #navbar {
+       width: 100%;
+       padding: 2rem;
+       border-radius: 0 0 20px 20px;
+       box-shadow: 0px 0px 10px grey;
+   }
+   #navbar > span {
+       font-size: 2.5rem;
+   }
+   #nav-links {
+    display: none;
+   }
+   
+   /* HOME-PAGE */
+   #home-page {
+       width: 200%;
+       height: 200vh;
+   }
+   #home-img {
+    width: 100%;
+    padding-top: 40%;
+   }
+   #home-img > img {
+       width: 70%;
+   }
+   #home-content {
+       width: 100%;
+       line-height: 3rem;
+       padding-top: 5%;
+   }
+   #home-content > p {
+       display: none;
+   }
+   #home-content > h1 {
+       width: 100%;
+       text-align: center;
+       font-size: 4rem;
+       line-height: 4rem;
+   }
+   #home-content > h1 > span {
+       width: 100%;
+       font-size: 2rem;
+       display: flex;
+       padding-left: 5%;
+       color: rgb(110, 109, 109);
+   }
+   #home-content > h5 {
+       width: 100%;
+       font-size: 1.5rem;
+       text-align: end;
+       padding-right: 5%;
+       line-height: 5rem;
+       color: rgb(97, 95, 95);
+   }
+   
+   /* ABOUT-PAGE */
+   #about-page {
+       width: 200%;
+       height: 150vh;
+   }
+   #location {
+       width: 100%;
+       display: flex;
+       align-items: center;
+       column-gap: 5px;
+       padding-left: 2rem;
+   }
+   #location > img {
+       width: 5%;
+   }
+   #location > span {
+       font-size: 1.5rem;
+       color: rgb(5, 166, 129);
+   }
+   #heading {
+       width: 100%;
+       text-align: center;
+       line-height: 2.7rem;
+       padding-top: 5%;
+   }
+   #heading > p {
+       width: 100%;
+       font-size: 2rem;
+   }
+   #heading > p > span {
+       width: 100%;
+   }
+   #heading > #p2 {
+    font-size: 1.3rem
+   }
+   #aboutme > p {
+       width: 100%;
+       color: rgb(114, 113, 113);
+       text-align: center;
+       font-size: 1.1rem;
+       line-height: 1.5rem;
+   } 
+   #cards {
+       width: 100%;
+       display: flex;
+       justify-content: space-evenly;
+       column-gap: 5%;
+       margin-top: 2rem;
+       padding: 0 5%;
+   }
+   .card {
+       width: 100%;
+       padding: 0.5rem;
+   }
+   .card > h1 {
+       line-height: 4rem;
+       font-size: 1.5rem;
+   }
+   .card1 > h3 {
+       font-weight: lighter;
+       line-height: 1.5rem;
+       font-size: 1rem;
+   }
+   .card1 > span  {
+       line-height: 2rem;
+       font-weight: 600;
+   }
+   .card1 > h5 {
+       font-weight: bold;
+       line-height: 3rem;
+   }
+   .card > h4 {
+    font-weight: lighter;
+    color: rgb(51, 51, 51);
+   }
+   .card > p {
+       line-height: 1.5rem;
+       color: rgb(64, 60, 60);
+   }
+   #promoting > p {
+    width: 100%;
+    text-align: center;
+    padding-left: 7%;
+   }
+   #promoting > span {
+    padding-left: 5%;
+   }
+   
+   /* SKILLS */
+   #skills-page {
+       width: 200%;
+       height: 140vh;
+       margin-top: 5rem;
+   }
+   #skills-page > h1 {
+       padding-bottom: 2rem;
+       color: rgb(75, 75, 75);
+   }
+   #skill-images {
+       width: 100%;
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       align-items: center;
+       justify-items: center;
+       gap: 3rem;
+       padding: 0 10%;
+   }
+   /* PROJECTS-PAGE */
+   #projects-page {
+       width: 200%;
+       height: 650vh;
+       padding: 0 10%;
+   }
+   #projects-page > h1 {
+       padding: 3rem 0;
+       line-height: 3rem;
+       font-size: 2.5rem;
+       text-align: center;
+   }
+   #project-cards {
+       width: 100%;
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       row-gap: 4rem;
+   }
+   .project {
+       padding: 1.3rem;
+   }
+   .project-content > h2 {
+       line-height: 3rem;
+   }
+   .project-content > p {
+    font-size: 1.1rem;
+       color: rgb(86, 86, 86);
+   }
+   .tech-stack {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       column-gap: 5px;
+       line-height: 5rem;
+   }
+   .links {
+       line-height: 1rem;
+   }
+   .note {
+       text-align: center;
+       padding-top: 1rem;
+   }
+   /* CONTACT-PAGE */
+   #contact-page {
+       width: 200%;
+       height: 40vh;
+       margin-top: 8rem;
+       line-height: 3rem;
+   }
+   #contact-page > p {
+    font-size: 1.2rem;
+       width: 100%;
+       color: rgb(62, 62, 62);
+   }
+   #contact-logo {
+       margin-top: 1rem;
+   }
+   #contact-logo > a > img {
+       padding: 0.5rem;
+   }
+   #contact-logo > a > img:hover {
+       box-shadow: 0px 0px 5px rgb(255, 0, 0);
+   }
+}
+
+/* TABLET-SCREEN */
+@media (min-width:481px) and (max-width:769px) {
+    /* NAVBAR */
+    #navbar {
+       padding: 1.5rem 0 1rem 0;
+   }
+   #navbar > span {
+       font-size: 1.7rem;
+   }
+   #nav-links > a {
+       color: rgba(1, 137, 49, 0.729);
+       font-size: 1.3rem;
+       padding: 5px 10px;
+   }
+   /* HOME-PAGE */
+   #home-page {
+       width: 150%;
+       min-height: 150vh;
+   }
+   #home-img {
+       padding-top: 20%;
+   }
+   #home-img > img {
+       width: 40%;
+   }
+   #home-content {
+       margin: auto;
+       line-height: 2.5rem;
+   }
+   #home-content > p {
+       text-align: start;
+       padding-left: 15%;
+       font-size: 1.5rem;
+   }
+   #home-content > h1 {
+       font-size: 3.5rem;
+   }
+   #home-content > h5 {
+       text-align: end;
+       padding-right: 8%;
+       line-height: 4rem;
+       font-size: 1.3rem;
+   }
+   /* ABOUT-PAGE */
+   #about-page {
+       width: 150%;
+       height: 120vh;
+   }
+   #heading {
+       width: 100%;
+       padding-top: 2rem;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   #heading > p {
+       font-size: 1.8rem;
+       line-height: 2rem;
+   }
+   #aboutme {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       row-gap: 2rem;
+       margin-top: 2rem;
+       padding: 0 10%;
+   }
+   #aboutme > p {
+       width: 100%;
+       color: rgb(114, 113, 113);
+       text-align: center;
+       font-size: 1.3rem;
+       line-height: 1.5rem;
+   }
+   #cards {
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       column-gap: 5%;
+       margin-top: 2rem;
+       padding: 0 10%;
+   }
+   .card {
+       padding: 1rem;
+   }
+   .card > h1 {
+       font-weight: normal;
+       line-height: 4rem;
+   }
+   .card1 > h3 {
+       font-weight: lighter;
+       line-height: 1.3rem;
+   }
+   .card1 > span  {
+       line-height: 3rem;
+   }
+   .card > h4 {
+    font-weight: lighter;
+   }
+   .card1 > h5 {
+       font-weight: bolder;
+       font-size: 1rem;
+       line-height: 2rem;
+   }
+   .card > p {
+       line-height: 1.7rem;
+       font-size: 1.2rem;
+   }
+   #promoting {
+       width: 100%;
+       margin-top: 2rem;
+       line-height: 2rem;
+   }
+   #promoting > span {
+       width: 150%;
+       padding-left: 10%;
+       font-size: 1.5rem;
+   }
+   #promoting > p {
+       padding-left: 15%;
+       font-size: 1.7rem;
+       text-align: center;
+       line-height: 3rem;
+   }
+   /* SKILLS */
+   #skills-page {
+       width: 150%;
+       height: 130vh;
+       margin-top: 10rem;
+   }
+   #skills-page > h1 {
+      font-size: 3rem;
+   }
+   #skill-images {
+       width: 100%;
+       display: grid;
+       grid-template-columns: repeat(4,1fr);
+       align-items: center;
+       justify-items: center;
+       row-gap: 5rem;
+       padding: 0 10%;
+   }
+   /* PROJECTS-PAGE */
+   #projects-page {
+       width: 150%;
+       height: auto;
+       padding: 0 10%;
+   }
+   #projects-page > h1 {
+       font-weight: normal;
+       line-height: 5rem;
+       font-size: 2.5rem;
+   }
+   #project-cards {
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       gap: 4rem;
+   }
+   .project {
+       width: 100%;
+       padding: 1rem;
+       border-radius: 3px;
+       box-shadow: 0px 0px 5px rgb(0, 0, 0);
+   }
+   .project-content > h2 {
+       width: 100%;
+       text-align: center;
+       line-height: 3rem;
+       font-size: 2rem;
+       font-weight: lighter;
+   }
+   .tech-stack {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       column-gap: 5px;
+       line-height: 3rem;
+   }
+   .tech-stack > h3 {
+       color: rgb(60, 58, 58);
+   }
+   .tech-stack > h4 {
+       color: rgb(27, 25, 25);
+       font-weight: lighter;
+   }
+   .links {
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       text-align: center;
+       line-height: 2.5rem;
+   }
+   .links > a {
+       text-decoration: none;
+       color: rgb(13, 0, 255);
+       padding: 3px 10px;
+       transition: 0.3s linear 0.1s;
+   }
+   .links > a:hover {
+       color: rgb(255, 0, 0);
+       background-color: rgba(166, 165, 165, 0.564);
+       padding: 3px 10px;
+       border-radius: 5px;
+   }
+   .note {
+       width: 100%;
+       color: grey;
+   }
+   .note > p > span {
+       color: black;
+       font-weight: bold;
+   }
+   
+   /* CONTACT-PAGE */
+   #contact-page {
+       width: 150%;
+       height: 40vh;
+       margin-top: 10rem;
+       text-align: center;
+       line-height: 2rem;
+   }
+   #contact-page > h1 {
+       width: 100%;
+       font-weight: lighter;
+   }
+   #contact-page > p {
+       width: 100%;
+       color: rgb(62, 62, 62);
+   }
+   #contact-logo {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       column-gap: 2rem;
+       margin-top: 1.5rem;
+   }
+   #contact-logo > a > img {
+       padding: 1rem;
+   }
+   #contact-logo > a > img:hover {
+       border-radius: 50px;
+       box-shadow: 0px 0px 5px rgb(90, 89, 89);
+   }
+}
+
+/* LAPTOP-SCREEN */
+@media (min-width:769px) {
+    /* NAVBAR */
+    #navbar {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 0 1rem 0;
+        box-shadow: 2px 2px 5px grey;
+        border-radius: 0 0 10px 10px;
+        position: fixed;
+    }
+    #navbar > span {
+        font-size: 1.5rem;
+    }
+    #navbar > span:hover {
+        color: rgb(2, 162, 125);
+    }
+    #nav-links {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #nav-links > a {
+        text-decoration: none;
+        color: rgb(109, 106, 106);
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+    #nav-links > a:hover {
+        color: grey;
+        padding: 5px 10px;
+        background-color: rgba(128, 128, 128, 0.082);
+    }
+    
+    /* HOME-PAGE */
+    #home-page {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+    #home-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 12%;
+    }
+    #home-img > img {
+        width: 20%;
+        background-color: rgba(255, 60, 0, 0.904);
+        border-radius: 50%;
+    }
+    #home-content {
+        width: 100%;
+        margin: auto;
+        line-height: 2rem;
+    }
+    #home-content > p {
+        width: 100%;
+        text-align: start;
+        padding-left: 30%;
+        color: rgb(93, 92, 92);
+    }
+    #home-content > h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    #home-content > h5 {
+        width: 100%;
+        text-align: end;
+        padding-right: 25%;
+        line-height: 3rem;
+        color: rgb(45, 44, 44);
+    }
+    
+    /* ABOUT-PAGE */
+    #about-page {
+        width: 100%;
+        height: 100vh;
+    }
+    #location {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        padding-left: 2rem;
+    }
+    #location > img {
+        width: 2%;
+    }
+    #location > span {
+        font-size: 1.5rem;
+        color: rgb(5, 166, 129);
+    }
+    #heading {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #heading > p {
+        font-size: 1.5rem;
+    }
+    #heading > p > span {
+        color: rgb(0, 89, 255);
+    }
+    #aboutme {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        margin-top: 1.5rem;
+        padding: 0 10%;
+    }
+    #aboutme > p {
+        width: 100%;
+        color: rgb(114, 113, 113);
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    #cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        column-gap: 10%;
+        margin-top: 2rem;
+        padding: 0 10%;
+    }
+    .card {
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 1rem;
+        box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.767);
+        border-radius: 10px;
+        transition: 0.5s linear 0.1s;
+    }
+    .card:hover {
+        background-color: rgba(151, 151, 151, 0.088);
+        box-shadow: 0px 0px 5px rgba(252, 21, 4, 0.992);
+    }
+    .card > h1 {
+        font-weight: normal;
+        color: rgb(14, 14, 79);
+        line-height: 5rem;
+    }
+    .card1 > h3 {
+        font-weight: lighter;
+        line-height: 2rem;
+    }
+    .card1 > span  {
+        line-height: 3rem;
+    }
+    .card1 > h5 {
+        font-weight: bolder;
+        color: rgb(72, 71, 71);
+    }
+    .card > p {
+        line-height: 2rem;
+        color: rgb(64, 60, 60);
+    }
+    #promoting {
+        width: 100%;
+        margin-top: 2rem;
+        line-height: 2rem;
+    }
+    #promoting > span {
+        width: 100%;
+        padding-left: 10%;
+    }
+    #promoting > p {
+        width: 100%;
+        padding-left: 15%;
+        color: rgb(61, 60, 60);
+    }
+    #promoting > p > a {
+        text-decoration: none;
+        color: rgb(13, 0, 255);
+        padding-left: 5%;
+    }
+    #promoting > p > a:hover {
+        color: red;
+    }
+    
+    /* SKILLS */
+    #skills-page {
+        width: 100%;
+        height: 80vh;
+        margin-top: 5rem;
+    }
+    #skills-page > h1 {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    #skill-images {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        justify-items: center;
+        row-gap: 2rem;
+        padding: 0 20%;
+    }
+    #skill-images > a > img {
+        background-color: rgba(255, 255, 255, 0.953);
+        padding: 2rem;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgb(42, 42, 42);
+        transition: 0.5s linear 0.1s;
+    }
+    #skill-images > a > img:hover {
+        box-shadow: 0px 0px 10px rgb(241, 22, 7);
+    }
+    
+    /* PROJECTS-PAGE */
+    #projects-page {
+        width: 100%;
+        height: 150vh;
+        padding: 0 5%;
+    }
+    #projects-page > h1 {
+        font-weight: normal;
+        padding: 1rem 0;
+        line-height: 3rem;
+    }
+    #project-cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 3rem;
+    
+    }
+    .project {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    }
+    .project > a > img {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgb(189, 60, 60);
+    }
+    .project-content {
+        width: 100%;
+    }
+    .project-content > h2 {
+        width: 100%;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .project-content > p {
+        width: 100%;
+        text-align: center;
+        color: rgb(72, 71, 71);
+        line-height: 1.3rem;
+    }
+    .tech-stack {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        column-gap: 5px;
+        line-height: 3rem;
+    }
+    .tech-stack > h3 {
+        color: rgb(60, 58, 58);
+    }
+    .tech-stack > h4 {
+        color: rgb(27, 25, 25);
+        font-weight: lighter;
+    }
+    .links {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        line-height: 2.5rem;
+    }
+    .links > a {
+        text-decoration: none;
+        color: rgb(13, 0, 255);
+        padding: 3px 10px;
+        transition: 0.3s linear 0.1s;
+    }
+    .links > a:hover {
+        color: rgb(255, 0, 0);
+        background-color: rgba(166, 165, 165, 0.564);
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+    .note {
+        width: 100%;
+        color: grey;
+    }
+    .note > p > span {
+        color: black;
+        font-weight: bold;
+    }
+    
+    /* CONTACT-PAGE */
+    #contact-page {
+        width: 100%;
+        height: 40vh;
+        margin-top: 10rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    #contact-page > h1 {
+        width: 100%;
+        font-weight: lighter;
+    }
+    #contact-page > p {
+        width: 100%;
+        color: rgb(62, 62, 62);
+    }
+    #contact-logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+        margin-top: 1.5rem;
+    }
+    #contact-logo > a > img {
+        padding: 1rem;
+    }
+    #contact-logo > a > img:hover {
+        border-radius: 50px;
+        box-shadow: 0px 0px 5px rgb(90, 89, 89);
+    }
+}
